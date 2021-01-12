@@ -1,0 +1,22 @@
+.footer_container{
+    margin-top: 170px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.about_design{
+    font-family: Roboto;
+    font-size: 13px;
+}
+.about_layout{
+    @extend .about_design;
+    color: $mainBlack;
+    text-decoration: underline;
+    display: block;
+    margin-top: 5px
+}
+.copyright{
+    @extend .about_design;
+    display: block;
+    font-size: 16px;
+    margin-top: 30px;
+}

@@ -1,0 +1,301 @@
+.section_aboutme{
+    margin-bottom: 130px;
+}
+/*===========My Description==========*/
+.my_description_image {
+    width: 50%;
+    padding-right: 30px;
+    float: left;
+    img {
+        width: 100%;
+    }
+}
+.my_description_text {
+    display: inline-block;
+    width: 50%;
+    margin-top: 20px;
+    padding-left: 30px;
+    span {
+        font-family: RobotoCondensed;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-family: RobotoCondensed;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+        padding-bottom: 20px;
+    }
+    p {
+        font-size: 12px;
+        line-height: 140%;
+    }
+}
+div .my_description_text:nth-child(2) {
+    margin-top: 70px;
+}
+@media screen and (max-width: 1024px) {
+    .my_description_image {
+        padding-right: 0px;
+    }
+    div .my_description_text:nth-child(2) {
+        margin-top: 60px;
+    }
+    .my_description_text {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 854px) {
+    .my_description_image {
+        padding-right: 30px;
+    }
+    div .my_description_text:nth-child(2) {
+        margin-top: 70px;
+    }
+    .my_description_text {
+        margin-top: 20px;
+    }
+    .my_description_text:last-child {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 823px) {
+    .my_description_image {
+        padding-right: 0px;
+    }
+    div .my_description_text:nth-child(2) {
+        margin-top: 60px;
+    }
+    .my_description_text {
+        margin-top: 10px;
+    }
+    .my_description_text:last-child {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    div .my_description_text:nth-child(2) {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 736px) {
+    .my_description_image {
+        padding-right: 30px;
+    }
+    div .my_description_text:nth-child(2) {
+        margin-top: 90px;
+    }
+    .my_description_text {
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+    .my_description_text:last-child {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .my_description_text:nth-child(4) {
+        display: block;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .my_description_image {
+        width: 100%;
+        padding-right: 0px;
+        float: none;
+        img {
+            width: 100%;
+        }
+    }
+    div .my_description_text:nth-child(2) {
+        margin-top: 30px;
+    }
+    .my_description_text {
+        padding: 0;
+        width: 100%;
+    }
+}
+/*====================================*/
+/*=============Time Line==============*/
+.my_timeline_wrapper {
+    margin-top: 90px;
+    width: 100%;
+    padding: 0;
+}
+.time_line_row {
+    display: flex;
+    width: 100%;
+}
+.time_line_column {
+    flex: 1 0 calc(100% / 6 - 30px);
+    margin: 30px 15px;
+    min-width: 94px;
+    max-width: 30%;
+}
+.time_line_column:first-child {
+    flex: 0 0 150px;
+}
+.time_line_heading {
+    width: 100%;
+    height: 150px;
+    background: $mainBlack;
+    color: white;
+    text-align: center;
+    span {
+        line-height: 150px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+.time_line_column {
+    margin-top: 30px;
+}
+.time_line_column_item {
+    width: 100%;
+}
+.red {
+    color: $textRed;
+}
+.time_line_date {
+    font-size: 18px;
+    color: $accent;
+    display: block;
+}
+.time_line_description {
+    font-size: 12px;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid $accent;
+}
+.time_line_description:last-child {
+    border: none;
+}
+@media screen and (max-width: 823px) {
+    .time_line_column {
+        flex: 1 0 calc(100% / 3 - 30px);
+        min-width: 94px;
+        max-width: 100%;
+    }
+    .time_line_row {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:320px){
+    .time_line_column {
+        flex: 1 0 calc(100% / 1 - 30px);
+    }
+}
+/*=======================================*/
+/*============MY Clients=================*/
+.my_clients_wrapper{
+    margin-top: 70px;
+    padding: 0;
+}
+.my_clients_row{
+    display: flex;
+    width: 100%;
+    min-width: 0px;
+    justify-content: space-between;
+}
+.my_clients_column_1{
+    flex: 0 0 180px;
+    height: 150px;
+    padding: 0 15px;
+}
+.my_clients_heading{
+    width: 150px;
+    background: $accent;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 150px;
+}
+.my_clients_column_2{
+    flex: 0 1 auto;
+    margin: 0 15px;
+}
+.my_clients_column_2_heading{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.client_list{
+    display: block;
+    padding-top: 10px;
+}
+.client_list_item{
+    font-size: 14px;
+    line-height: 140%;
+}
+.my_clients_column_4{
+    flex: 0 1 482px;
+    text-align: center;
+    margin: 0 15px;
+    align-self: center;
+    min-width: 0;
+    overflow: hidden;
+}
+.clients_review{
+    font-family: RobotoCondensed;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+}
+.clients_name{
+    font-family: RobotoCondenced;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.reviews_btn_prev,
+.reviews_btn_next{
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+}
+.reviews_btn_prev::before{
+    content: '\e900';
+    font-family: icomoon;
+    font-size: 30px;
+}
+.reviews_btn_next::before{
+    content: '\e901';
+    font-family: icomoon;
+    font-size: 30px;
+}
+@media screen and (max-width:778px){
+    .my_clients_row{
+        flex-wrap: wrap;
+    }
+    .my_clients_column_4{
+        flex: 0 1 482px;
+        text-align: center;
+        margin: 20px auto;
+        align-self: center;
+    }
+}
+@media screen and (max-width:429px){
+    .my_clients_column_1{
+        flex: 0 0 100%;
+        height: 150px;
+        padding: 0 15px;
+    }
+    .my_clients_column_2{
+        flex: 0 1 auto;
+        margin-top: 15px;
+    }
+    .client_list_item{
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}

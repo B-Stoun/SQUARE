@@ -1,0 +1,149 @@
+body{
+    position: relative;
+}
+.portfolio_item_wrapper_row {
+    display: flex;
+    width: 100%;
+    min-width: 0px;
+    flex-wrap: wrap;
+}
+.portfolio_item_wrapper_column{
+    flex: 0 1 33.333%;
+    min-width: 300px;
+    position: relative;
+    cursor: pointer;
+}
+.portfolio_item{
+    width: 100%;
+    .portfolio_preview{
+        width: 100%;
+    }
+}
+.bg_blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba($color: #000000, $alpha: .4);
+    opacity: 0;
+}
+.bg_blur_active{
+    .bg_blur{
+        opacity: 1;
+    }
+}
+
+.scale{
+    margin: 50%;
+    transform: translate(-50%, -50%);
+}
+.section_portfolio_heading{
+    margin-top: 50%;
+    margin-left: 20px;
+    transform: translateY(-50%);
+    span{
+        font-family: RobotoCondensed;
+        font-weight: 400;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:930px){
+    .portfolio_item_wrapper_column{
+        flex: 0 1 50%;
+        min-width: 200px;
+    }
+}
+@media screen and (max-width:572px){
+    .portfolio_item_wrapper_column{
+        flex: 0 1 100%;
+    }
+}
+.portfolio_item_slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: $mainBlack, $alpha: .4);
+    display: none;
+}
+.portfolio_item_slider_open{
+    display: block;
+}
+.portfolio_btn_close{
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    z-index: 15;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+}
+.portfolio_popup_sliders{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba($color: #000000, $alpha: .4);
+    display: none;
+}
+.portfolio_popup_sliders_open{
+    display: block;
+}
+.btn_close_popup{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;
+    right: -90%;
+    cursor: pointer;
+    span{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-1.5px);
+        left: 50%;
+        transform: translateX(-15px);
+    }
+    span::after,
+    span::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: white;
+    }
+    span::before{
+        transform: rotate(-45deg);
+    }
+    span::after{
+        transform: rotate(45deg);
+    }
+}
+.full_size{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.popup_slider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.slider_slide{
+    width: 100%;
+    height: auto;
+}
+.popup_slider{
+    overflow: hidden;
+    padding: 0;
+}

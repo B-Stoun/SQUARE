@@ -1,0 +1,117 @@
+//========Top Slider========//
+.title_container{
+    //padding: 0;
+    //max-width: 1140px;
+    position: relative;
+}
+.image_slider_slide>picture>img{
+    max-width: 100%;
+}
+//==========================//
+
+
+//========Bottom Slider========//
+.image_slider_description{
+    width: 240px;
+    min-width: 0px;
+    height: 240px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    border: 2px solid $border;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text_slider{
+    width: 180px;
+    height: 107px;
+    margin-top: 20px;
+}
+.slider_navigation{
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn_prev,
+    .btn_next{
+        width: 35px;
+        height: 35px;
+        background: $mainBlack;
+        color: white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .btn_prev::after{
+        content: '\e900';
+        font-family: icomoon;
+    }
+    .btn_next::after{
+        content: '\e901';
+        font-family: icomoon;
+    }
+    .slider_pagination{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+.client_name{
+    font-family: RobotoCondensed;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.client_post{
+    font-family: RobotoCondensed;
+    font-weight: 700;
+    font-size: 14px;
+}
+.client_review{
+    margin-top: 10px;
+    font-family: RobotoCondensed;
+    font-weight: 700;
+    font-size: 14px;
+}
+//==========================//
+@media screen and (max-width:540px){
+    .image_slider_description{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        height: 150px;
+        bottom: 0px;
+        position: relative;
+    }
+    .text_slider{
+        margin-top: 10px;
+    }
+    .slider_navigation{
+        width: 120px;
+    }
+}
+@media screen and (max-width:320px){
+    .image_slider_description{
+        width: 100%;
+        height: 180px;
+        flex-direction: column;
+        border: 2px solid $border;
+        padding: 10px;
+    }
+    .slider_navigation{
+        width: 180px;
+        margin: 0;
+    }
+    .text_slider{
+        width: 180px;
+        height: 107px;
+        margin-top: 0px;
+    }
+}

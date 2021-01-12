@@ -1,0 +1,39 @@
+//=============Подключение Шрифтов=================//
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+//_____________________________________________//
+//Общие стили//
+@import "vars.scss";
+@import "zeroing.scss";
+body {
+    font-family: RobotoCondensed;
+    width: 100%;
+    color: $mainBlack;
+}
+.container {
+    max-width: 1170px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+//_____________________________//
+//Импорт секций//
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "fonts.scss";
+@import "header.scss";
+@import "title.scss";
+@import "news.scss";
+@import "partners.scss";
+@import "footer.scss";
+@import "portfolio_title.scss";
+@import "news_title.scss";
+@import "contacts_title.scss";
+@import "aboutme_title.scss";
+//______________________//
