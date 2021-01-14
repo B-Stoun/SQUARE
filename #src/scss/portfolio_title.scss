@@ -1,4 +1,4 @@
-body{
+body {
     position: relative;
 }
 .portfolio_item_wrapper_row {
@@ -7,73 +7,77 @@ body{
     min-width: 0px;
     flex-wrap: wrap;
 }
-.portfolio_item_wrapper_column{
+.portfolio_item_wrapper_column {
     flex: 0 1 33.333%;
     min-width: 300px;
     position: relative;
     cursor: pointer;
 }
-.portfolio_item{
+.portfolio_item {
     width: 100%;
-    .portfolio_preview{
+    .portfolio_preview {
         width: 100%;
     }
 }
-.bg_blur{
+.bg_blur {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 2;
-    background: rgba($color: #000000, $alpha: .4);
+    background: rgba($color: #000000, $alpha: 0.4);
     opacity: 0;
 }
-.bg_blur_active{
-    .bg_blur{
+.bg_blur_active {
+    .bg_blur {
         opacity: 1;
     }
 }
 
-.scale{
+.scale {
     margin: 50%;
     transform: translate(-50%, -50%);
 }
-.section_portfolio_heading{
+.section_portfolio_heading {
     margin-top: 50%;
     margin-left: 20px;
     transform: translateY(-50%);
-    span{
+    span {
         font-family: RobotoCondensed;
         font-weight: 400;
         font-size: 24px;
     }
 }
-@media screen and (max-width:930px){
-    .portfolio_item_wrapper_column{
+@media screen and (max-width: 930px) {
+    .portfolio_item_wrapper_column {
         flex: 0 1 50%;
         min-width: 200px;
     }
 }
-@media screen and (max-width:572px){
-    .portfolio_item_wrapper_column{
+@media screen and (max-width: 572px) {
+    .portfolio_item_wrapper_column {
         flex: 0 1 100%;
     }
 }
-.portfolio_item_slider{
+.portfolio_item_slider {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
     width: 100%;
     height: 100%;
-    background: rgba($color: $mainBlack, $alpha: .4);
-    display: none;
+    background: rgba($color: $mainBlack, $alpha: 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
 }
-.portfolio_item_slider_open{
-    display: block;
+.portfolio_item_slider_open {
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 0.3s;
 }
-.portfolio_btn_close{
+.portfolio_btn_close {
     width: 50px;
     height: 50px;
     background: white;
@@ -83,67 +87,90 @@ body{
     left: 50px;
     cursor: pointer;
 }
-.portfolio_popup_sliders{
+.portfolio_popup_sliders {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: 10;
-    background: rgba($color: #000000, $alpha: .4);
-    display: none;
+    background: rgba($color: #000000, $alpha: 1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
 }
-.portfolio_popup_sliders_open{
-    display: block;
+.portfolio_popup_sliders_open {
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 0.3s;
 }
-.btn_close_popup{
-    width: 30px;
-    height: 30px;
+.close_popup_container {
+    width: 100%;
+    height: 40px;
     position: relative;
-    top: 15px;
-    right: -90%;
+    top: 0;
+    left: 0;
     cursor: pointer;
-    span{
+    z-index: 15;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    transform: translateY(-60px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
+    .btn_close_popup {
         display: block;
+        width: 25px;
+        height: 25px;
         position: absolute;
         top: 50%;
-        transform: translateY(-1.5px);
-        left: 50%;
-        transform: translateX(-15px);
+        transform: translateY(-1px);
+        right: 10%;
     }
-    span::after,
-    span::before{
-        content: '';
+    .btn_close_popup::after,
+    .btn_close_popup::before {
+        content: "";
         display: block;
         position: absolute;
-        width: 30px;
-        height: 3px;
+        width: 25px;
+        height: 2px;
         background: white;
     }
-    span::before{
+    span::before {
         transform: rotate(-45deg);
     }
-    span::after{
+    span::after {
         transform: rotate(45deg);
     }
 }
-.full_size{
+.close_popup_container_open {
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+    transition: all ease 0.3s;
+}
+.full_size {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.popup_slider{
+.popup_slider {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-}
-.slider_slide{
     width: 100%;
-    height: auto;
-}
-.popup_slider{
     overflow: hidden;
     padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
+}
+.popup_slider_open {
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 0.3s;
+}
+.slider_slide {
+    width: 100%;
+    height: auto;
 }
