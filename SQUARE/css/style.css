@@ -1425,6 +1425,219 @@ div .my_description_text:nth-child(2) {
   height: auto;
 }
 
+.news_section_item_text {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.post_heading {
+  font-family: RobotoCondensed;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.post_body {
+  font-family: RobotoCondensed;
+  font-size: 14px;
+  line-height: 140%;
+  display: block;
+  margin-top: 30px;
+}
+
+.bottom_action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.share_share {
+  font-family: RobotoCOndensed;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.share_twitter::before,
+.share_facebook::before,
+.share_instagramm::before {
+  font-size: 20px;
+  font-family: icomoon;
+  margin-left: 20px;
+}
+
+.share_facebook::before {
+  content: "\e903";
+}
+
+.share_twitter::before {
+  content: "\e906";
+}
+
+.share_instagramm::before {
+  content: "\e905";
+}
+
+.qt_comments {
+  font-family: RobotoCondensed;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+.news_comments_items {
+  margin-top: 15px;
+}
+
+.news_section_item_comments_form {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news_section_item_comments_form h2 {
+  font-family: RobotoCondensed;
+  font-size: 20px;
+  font-weight: bold;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#item_comments_name,
+#item_comments_email {
+  width: 400px;
+  height: 40px;
+  border: 1px solid #362F2F;
+  padding: 0 10px;
+  display: block;
+  margin-top: 20px;
+}
+
+#comments_body {
+  width: 400px;
+  height: 190px;
+  outline: 1px solid #362F2F;
+  resize: none;
+  margin-top: 20px;
+  display: block;
+  padding: 10px;
+}
+
+#send_comment {
+  width: 170px;
+  height: 35px;
+  background: #362F2F;
+  font-family: RobotoCondensed;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 20px;
+}
+
+.news_section_item_latest_news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.news_comments_item {
+  margin-top: 15px;
+}
+
+.news_comments_item_top {
+  position: relative;
+}
+
+.autor_name {
+  font-family: RobotoCondensed;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.comment_post_date {
+  font-family: RobotoCondensed;
+  font-size: 12px;
+  color: #7f8c8c;
+  line-height: 18px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.news_comments_item_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #e6e6e6;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.initials {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75px;
+          flex: 0 0 75px;
+  height: 75px;
+  background: #362F2F;
+  text-align: center;
+}
+
+.initials span {
+  color: #ffffff;
+  line-height: 75px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.comments_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 597px;
+          flex: 1 1 597px;
+  padding-left: 40px;
+  line-height: 140%;
+  font-size: 14px;
+  padding: 15px 40px;
+}
+
 @media screen and (max-width: 1060px) {
   .open {
     background: white;
