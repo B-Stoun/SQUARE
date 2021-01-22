@@ -55,7 +55,7 @@
                 <source srcset="./img/news/news_item/Image.webp 1x, ./img/news/news_item/Image@2x.webp 2x"
                     type="image/webp">
                 <source srcset="./img/news/news_item/Image.png 1x, ./img/news/news_item/Image@2xpng 2x">
-                <img src="./img/news/news_item/Image.png" alt="news">
+                <img class="item_news_img" src="./img/news/news_item/Image.png" alt="news">
             </picture>
         </div>
         <div class="news_section_item_text">
@@ -105,8 +105,43 @@
                     <div class="initials">
                         <span class="initials_init">RS</span>
                     </div>
-                    <div class="comments_body">
-                        <p class="comments_body_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, dicta facere? Non,
+                    <div class="comments_bodys">
+                        <p class="comments_body_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Laborum, dicta facere? Non,
+                            reprehenderit, sapiente, esse exercitationem numquam ipsa voluptatem possimus consequuntur
+                            minima laboriosam atque obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news_comments_item">
+                <div class="news_comments_item_top">
+                    <span class="autor_name">Jhon Wu</span>
+                    <span class="comment_post_date">1 January 2021, 15:22</span>
+                </div>
+                <div class="news_comments_item_bottom">
+                    <div class="initials">
+                        <span class="initials_init">JW</span>
+                    </div>
+                    <div class="comments_bodys">
+                        <p class="comments_body_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Laborum, dicta facere? Non,
+                            reprehenderit, sapiente, esse exercitationem numquam ipsa voluptatem possimus consequuntur
+                            minima laboriosam atque obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news_comments_item">
+                <div class="news_comments_item_top">
+                    <span class="autor_name">Anthony Rodriguez</span>
+                    <span class="comment_post_date">1 January 2021, 15:22</span>
+                </div>
+                <div class="news_comments_item_bottom">
+                    <div class="initials">
+                        <span class="initials_init">AR</span>
+                    </div>
+                    <div class="comments_bodys">
+                        <p class="comments_body_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Laborum, dicta facere? Non,
                             reprehenderit, sapiente, esse exercitationem numquam ipsa voluptatem possimus consequuntur
                             minima laboriosam atque obcaecati.</p>
                     </div>
@@ -115,17 +150,14 @@
         </div>
         <div class="news_section_item_comments_form">
             <h2>Leave a comment</h2>
-            <form class="form">
+            <form class="comment_form">
                 <label for="item_comments_name">
-                    <input type="text" name="text" id="item_comments_name" placeholder="Your name">
-                </label>
-                <label for="item_comments_email">
-                    <input type="text" name="email" id="item_comments_email" placeholder="Your email">
+                    <input type="text" name="text" class="item_comments_name" placeholder="Your name">
                 </label>
                 <label for="comments_body">
-                    <textarea id="comments_body" cols="30" rows="10" name="comment" placeholder="Comment"></textarea>
+                    <textarea class="comments_body" cols="30" rows="10" name="comment" placeholder="Comment"></textarea>
                 </label>
-                <button type="submit" id="send_comment">send</button>
+                <button type="submit" class="send_comment">send</button>
             </form>
         </div>
         <div class="news_section_item_latest_news">
@@ -170,7 +202,7 @@
                             <div class="content_item_content">
                                 <p class="item_content-preview">Lorem ipsum dolor sit, amet consectetur adipiscing elit.
                                     Quisque fringilla mi orci, ac venenatis ante venenatis eget...</p>
-                                <a href="#" class="read_more">read more</a>
+                                <a href="./news_item_page.html" class="read_more">read more</a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +220,7 @@
                             <div class="content_item_content">
                                 <p class="item_content-preview">Lorem ipsum dolor sit, amet consectetur adipiscing elit.
                                     Quisque fringilla mi orci, ac venenatis ante venenatis eget...</p>
-                                <a href="#" class="read_more">read more</a>
+                                <a href="./news_item_page.html" class="read_more">read more</a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +239,7 @@
                             <div class="content_item_content">
                                 <p class="item_content-preview">Lorem ipsum dolor sit, amet consectetur adipiscing elit.
                                     Quisque fringilla mi orci, ac venenatis ante venenatis eget...</p>
-                                <a href="#" class="read_more">read more</a>
+                                <a href="./news_item_page.html" class="read_more">read more</a>
                             </div>
                         </div>
                     </div>

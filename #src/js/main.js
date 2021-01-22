@@ -1,5 +1,4 @@
 import './portfolio';
-import './comments';
 import './header';
 import './form';
 import Swiper, { Navigation, Pagination, Autoplay, Controller, A11y } from 'swiper';
